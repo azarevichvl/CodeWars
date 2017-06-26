@@ -13,18 +13,42 @@ namespace _7kyu.StrCollections
 
             //string[] names = { "Ryan", "Kieran", "Mark", "Jimmy" };
             //Console.Write(Program.Kata.FriendOrFoe(names));
-            Console.Write(Program.Kata.rowSumOddNumbers( 1 ));
+            Console.Write(Program.Kata.Find(new int[] = {2;6;8;-10;3} ));
             Console.ReadKey();
 
         }
 
         public static class Kata
         {
+
+            public static int Find(int[] integers)
+            {
+                return -1;
+            }
+
             public static long rowSumOddNumbers(long n)
             {
-                int res = 1;
+                long res = 1;
+                long temp = 1;
+                for (long i = 1; i < n; i++)
+                {
+                    temp *= 2;
+                    res += temp;
+                }
+                //Console.WriteLine("Res = {0}",res);
 
-                return res;
+                temp = 0;
+                long ans = res;
+                for (long i = 1; i < n; i++ )
+                {
+                    ans += res;
+                    temp += temp + 2;
+                };
+
+
+
+
+                return ans + temp;
                 // TODO
             }
             public static int SecondTask(int p0, double percent, int aug, int p)
