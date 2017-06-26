@@ -24,6 +24,7 @@ namespace _7kyu.StrCollections
             {
                 int res = 1;
 
+                return res;
                 // TODO
             }
             public static int SecondTask(int p0, double percent, int aug, int p)
