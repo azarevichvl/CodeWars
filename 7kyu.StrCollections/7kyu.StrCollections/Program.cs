@@ -13,7 +13,11 @@ namespace _7kyu.StrCollections
 
             //string[] names = { "Ryan", "Kieran", "Mark", "Jimmy" };
             //Console.Write(Program.Kata.FriendOrFoe(names));
-            Console.Write(Program.Kata.Find(new int[] = {2;6;8;-10;3} ));
+
+
+            //Console.Write(Program.Kata.Find(new int[] { 206847684, 1056521, 7, 17, 1901, 21104421, 7, 1, 35521, 1, 7781 }));
+            //Console.WriteLine(Program.Kata.FindEvenIndex(new int[] {1,2,3,4,3,2,1}));
+            Console.WriteLine(Program.Kata.CountBits(10));
             Console.ReadKey();
 
         }
@@ -21,9 +25,64 @@ namespace _7kyu.StrCollections
         public static class Kata
         {
 
+            public static int CountBits(int n)
+            {
+                int count = 0;
+                while (n > 1)
+                {
+                    if (n % 2 != 0) { 
+                        count++;
+                        
+                    }
+                    n = n/2;
+                    if (n == 1) { count++; }
+                }
+                return count;
+            }
+
+            public static int FindEvenIndex(int[] arr)
+            {
+                int indx = -1;
+                int i, fullSum = 0;
+                foreach (int s in arr)
+                {
+                    fullSum += s;
+                }
+
+                int currSum = 0;
+
+                for (i = 0; i < arr.Length; i++)
+                {
+                    
+                    fullSum -= arr[i];
+                    if (currSum == fullSum) { indx = i; break; };
+                    currSum += arr[i];
+
+                }
+
+                return indx;
+            }
+
             public static int Find(int[] integers)
             {
-                return -1;
+                int oddCount = 0, evenCount = 0;
+                int ans = 0;
+                foreach (int b in integers)
+                {
+                    if ((b % 2) == 0) { oddCount++; }
+                    else
+                    {
+                        evenCount++;
+                    }
+                }
+
+                for (int i = 0; i < integers.Length; i++)
+                {
+                    if ((evenCount > 1)&&(integers[i] % 2 == 0)) { ans = integers[i]; }
+                    if ((oddCount > 1) && (integers[i] % 2 != 0)) { ans = integers[i]; }
+                }
+
+                return ans;
             }
 
             public static long rowSumOddNumbers(long n)
