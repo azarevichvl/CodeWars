@@ -7,3 +7,6 @@ D:\C# Training\Codewars\7kyu.StrCollections\7kyu.StrCollections\obj\Debug\7kyu.S
 D:\CSharpTraining\Codewars\7kyu.StrCollections\7kyu.StrCollections\bin\Debug\7kyu.StrCollections.exe.config
 D:\CSharpTraining\Codewars\7kyu.StrCollections\7kyu.StrCollections\obj\Debug\7kyu.StrCollections.exe
 D:\CSharpTraining\Codewars\7kyu.StrCollections\7kyu.StrCollections\obj\Debug\7kyu.StrCollections.pdb
+D:\CSharpTraining\Codewars\7kyu.StrCollections\7kyu.StrCollections\bin\Debug\7kyu.StrCollections.exe
+D:\CSharpTraining\Codewars\7kyu.StrCollections\7kyu.StrCollections\bin\Debug\7kyu.StrCollections.pdb
+D:\CSharpTraining\Codewars\7kyu.StrCollections\7kyu.StrCollections\obj\Debug\7kyu.StrCollections.csprojResolveAssemblyReference.cache

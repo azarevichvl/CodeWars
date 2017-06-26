@@ -11,14 +11,41 @@ namespace _7kyu.StrCollections
         static void Main(string[] args)
         {
 
-            string[] names = { "Ryan", "Kieran", "Mark", "Jimmy" };
-            Console.Write(Program.Kata.FriendOrFoe(names));
+            //string[] names = { "Ryan", "Kieran", "Mark", "Jimmy" };
+            //Console.Write(Program.Kata.FriendOrFoe(names));
+            Console.Write(Program.Kata.rowSumOddNumbers( 1 ));
             Console.ReadKey();
 
         }
 
         public static class Kata
         {
+            public static long rowSumOddNumbers(long n)
+            {
+                int res = 1;
+
+                // TODO
+            }
+            public static int SecondTask(int p0, double percent, int aug, int p)
+            {
+                int res = p0;
+                int yearNumber = 0;
+
+                //if (percent >= 1)
+                {
+                    percent = percent / 100;
+                }
+
+                while (res < p)
+                {
+                    res += (int)(res * percent) + aug;
+                    yearNumber++;
+                    Console.WriteLine(res);
+                }
+
+                return yearNumber;
+            }
+
             public static IEnumerable<string> FriendOrFoe(string[] names)
             {
                 int i = 0, friendsCount = 0;
